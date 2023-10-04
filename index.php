@@ -9,13 +9,13 @@
     <h1>FORMULAIRE DE RECENSEMENT </h1>
     <p>Veuillez saisir vos informations dans ce formulaire et par la suite l'envoyer </p><br>
     <form method="post" action="formResult.php" >
-        <label for="firstname">Entrez votre Nom :  </label>
-        <input type="text" id="firstname"><br><br>
+        <label for="firstname">Enter your name :  </label>
+        <input name="nom" type="text" id="firstname"><br><br>
         <label for="name">Entrez votre Prenom :  </label>
-        <input type="text" id="name"><br><br>
+        <input name="prenom" type="text" id="name"><br><br>
         <label for="year">Entrez votre Age : </label>
-        <input type="text" id="year"><br><br>
-        <input type="button" value="envoyer">
+        <input name="age" type="text" id="year"><br><br>
+        <input type="submit" value="envoyer">
     </form>
 </body>
 </html>
