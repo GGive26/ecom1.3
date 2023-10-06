@@ -1,7 +1,5 @@
 <?php 
-
 function nameLengthIsValid($nameToValid){
-
     //minimum 2 maximum 10
     $length = strlen($nameToValid);
     $responses=[
@@ -20,6 +18,12 @@ function nameLengthIsValid($nameToValid){
         ];
     }
 return $responses;    
+}
+function addSalt($nameToSalt){
+    $salt = "unPeuDeSalt123!";
+    $saltedName=$salt.$nameToSalt.$salt;
+
+    return $saltedName;
 }
 
 ?>

@@ -12,9 +12,12 @@ if($_POST){
     $nameLengthIsValid = nameLengthIsValid($_POST['nom']);
     echo'<br>';
     var_dump($nameLengthIsValid);
-    if(!$namenameLengthIsValid['isValid']){
+    if(!$nameLengthIsValid['isValid']){
         //on fait notre traitement 
     }
     }
+    echo'<br>';
+    $saltedName=addSalt($_POST['nom']);
+    var_dump($saltedName);
 
 ?>
