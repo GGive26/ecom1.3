@@ -15,9 +15,14 @@ if($_POST){
     if(!$nameLengthIsValid['isValid']){
         //on fait notre traitement 
     }
-    }
     echo'<br>';
     $saltedName=addSalt($_POST['nom']);
     var_dump($saltedName);
 
+    echo'<br>';
+    $encodName = encodName($saltedName);
+    var_dump($encodName);
+    }
 ?>
+<br>
+<a href="./index.php">retour</a>
